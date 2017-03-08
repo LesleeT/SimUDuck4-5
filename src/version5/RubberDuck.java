@@ -1,6 +1,6 @@
 package version5;
 
-public class RubberDuck extends Duck {
+public class RubberDuck implements Duck {
 	
 	public RubberDuck() {
 		// these properties are inherited from Duck

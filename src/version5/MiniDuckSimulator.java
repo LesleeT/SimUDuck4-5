@@ -3,7 +3,7 @@ package version5;
 public class MiniDuckSimulator {
 
 	public static void main(String[] args) {
-		Duck mallard = new MallardDuck( new Quack());
+		Duck mallard = new MallardDuck( new Quack(), new Fly());
 		mallard.display();
 		mallard.performQuack();
 		mallard.performFly();
@@ -13,12 +13,12 @@ public class MiniDuckSimulator {
 		mallard.performQuack();
 		mallard.performFly();
 
-		Duck model = new ModelDuck();
-		model.display();
-		model.performFly();
+		//Duck model = new ModelDuck();
+		//model.display();
+		//model.performFly();
                 
-		model.setFlyBehavior( new FlyRocketPowered() );
-		model.performFly();
+		//model.setFlyBehavior( new FlyRocketPowered() );
+		//model.performFly();
 	}
 
 }

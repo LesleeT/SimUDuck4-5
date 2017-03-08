@@ -27,8 +27,17 @@ public class ModelDuck implements Duck {
 
     
 
-	
-	public final void display() {
-		System.out.println("I'm a model duck");
-	}
+    public final void display() {
+	System.out.println("I'm a model duck");
+    }
+
+    @Override
+    public void performQuack() {
+        quackBehavior.quack();
+    }
+
+    @Override
+    public void performFly() {
+        flyBehavior.fly();
+    }
 }
