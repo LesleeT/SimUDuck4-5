@@ -8,23 +8,10 @@ package version5;
  * @author jlombardo
  *
  */
-public interface Duck {
-	// Instance variables of interface type
-	// Each duck has a reference to something that implements the behaviors
-	// via an interface. Hey, isn't this composition the DIP way!!!
-	// Only problem is we still have the limitation that all Ducks
-	// have fly and quack behaviors, even thought that is not always needed.
-	//private FlyBehavior flyBehavior;
-	//private QuackBehavior quackBehavior;
-	
+public interface Duck {	
 	
 	public abstract void display();
-	
-	/*
-	 * Rather than handling the quack behavior itself, the Duck object
-	 * delegates that behavior to the object referenced by quackBehavior.
-	 * This object is unknown -- that's DIP in action!
-	 */
+
 	public abstract void performQuack();
 	
 	public abstract void performFly();
@@ -33,6 +20,5 @@ public interface Duck {
         
         public abstract void setQuackBehavior(QuackBehavior quackBeh);
 	
-	
-	// OTHER DUCK-LIKE METHODS
+
 }

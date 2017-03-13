@@ -9,10 +9,11 @@ public class ModelDuck implements Duck {
         this.quackBehavior = quackBehavior;
     }
 
-    public final FlyBehavior getFlyBehavior() {
+    public FlyBehavior getFlyBehavior() {
         return flyBehavior;
     }
 
+    @Override
     public final void setFlyBehavior(FlyBehavior flyBehavior) {
         this.flyBehavior = flyBehavior;
     }
@@ -21,23 +22,23 @@ public class ModelDuck implements Duck {
         return quackBehavior;
     }
 
-    public void setQuackBehavior(QuackBehavior quackBehavior) {
+    @Override
+    public final void setQuackBehavior(QuackBehavior quackBehavior) {
         this.quackBehavior = quackBehavior;
-    }
+    } 
 
-    
-
+    @Override
     public final void display() {
 	System.out.println("I'm a model duck");
     }
 
     @Override
-    public void performQuack() {
+    public final void performQuack() {
         quackBehavior.quack();
     }
 
     @Override
-    public void performFly() {
+    public final void performFly() {
         flyBehavior.fly();
     }
 }

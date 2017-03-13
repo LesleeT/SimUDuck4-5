@@ -25,11 +25,9 @@ public class RubberDuck implements Duck {
         this.flyBehavior = flyBehavior;
     }
         
-	
-	
-	public void display() {
-		System.out.println("I'm a Rubber Duck");
-	}
+    public void display() {
+	System.out.println("I'm a Rubber Duck");
+    }
 
     @Override
     public void performQuack() {
