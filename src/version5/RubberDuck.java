@@ -9,33 +9,36 @@ public class RubberDuck implements Duck {
         this.flyBehavior = flyBehavior;
     }
 
-    public QuackBehavior getQuackBehavior() {
+    public final QuackBehavior getQuackBehavior() {
         return quackBehavior;
     }
 
-    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        @Override
+    public final void setQuackBehavior(QuackBehavior quackBehavior) {
         this.quackBehavior = quackBehavior;
     }
 
-    public FlyBehavior getFlyBehavior() {
+    public final FlyBehavior getFlyBehavior() {
         return flyBehavior;
     }
 
-    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        @Override
+    public final void setFlyBehavior(FlyBehavior flyBehavior) {
         this.flyBehavior = flyBehavior;
     }
         
-    public void display() {
+        @Override
+    public final void display() {
 	System.out.println("I'm a Rubber Duck");
     }
 
     @Override
-    public void performQuack() {
+    public final void performQuack() {
          quackBehavior.quack();    
     }
 
     @Override
-    public void performFly() {
+    public final void performFly() {
         flyBehavior.fly();
     }
 	

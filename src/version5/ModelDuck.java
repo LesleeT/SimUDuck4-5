@@ -9,7 +9,7 @@ public class ModelDuck implements Duck {
         this.quackBehavior = quackBehavior;
     }
 
-    public FlyBehavior getFlyBehavior() {
+    public final FlyBehavior getFlyBehavior() {
         return flyBehavior;
     }
 
@@ -18,7 +18,7 @@ public class ModelDuck implements Duck {
         this.flyBehavior = flyBehavior;
     }
 
-    public QuackBehavior getQuackBehavior() {
+    public final QuackBehavior getQuackBehavior() {
         return quackBehavior;
     }
 

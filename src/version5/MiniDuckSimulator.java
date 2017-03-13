@@ -13,7 +13,7 @@ public class MiniDuckSimulator {
 		mallard.performQuack();
 		mallard.performFly();
 
-		Duck model = new ModelDuck(new FlyNoWay(), new Quack());
+		Duck model = new ModelDuck(new FlyNoWay(), new MuteQuack());
 		model.display();
 		model.performFly();
                 
